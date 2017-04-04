@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Shower Presentation Engine</title>
+	<title>Занятие 1. Вступление. Git.</title>
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,191 +10,810 @@
 <body class="shower list">
 
 	<header class="caption">
-		<h1>Shower Presentation Engine</h1>
-		<p>Yours Truly, Famous Inc.</p>
+		<h1>.SEC: основы веб-программирования</h1>
+		<h2>Занятие 1. Вступление. Git.</h2>
 	</header>
 
-	<section class="slide" id="cover">
-		<h2>Shower Presentation Engine</h2>
-		<p>Brought to you by <a href="http://pepelsbey.net">Vadim Makeev</a></p>
-		<figure>
-			<img class="cover" src="pictures/cover.jpg" alt="Hands on the orange typewriter in a park">
-			<figcaption class="white">
-				<a href="http://fiftyfootshadows.net/">© John Carey</a>
-			</figcaption>
-		</figure>
-		<style>
-			#cover h2 {
-				margin:30px 0 0;
-				color:#FFF;
-				text-align:center;
-				font-size:70px;
-				}
-			#cover p {
-				margin:10px 0 0;
-				text-align:center;
-				color:#FFF;
-				font-style:italic;
-				font-size:20px;
-				}
-				#cover p a {
-					color:#FFF;
-					}
-		</style>
-	</section>
-
 	<section class="slide">
-		<h2>Shower key features</h2>
+		<h2>План занятия</h2>
 		<ol>
-			<li>Built on HTML, CSS and vanilla JavaScript</li>
-			<li>Works in all modern browsers</li>
-			<li>Themes are separated from engine</li>
-			<li>Modular and extensible</li>
-			<li>Fully keyboard accessible</li>
-			<li>Printable to PDF</li>
-		</ol>
-		<p class="note">Shower ['ʃəuə] noun. A person or thing that shows.</p>
-	</section>
-
-	<section class="slide">
-		<h2>Plain text on your slides</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur <a href="#4">adipisicing</a> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <em>quis nostrud</em> exercitation ullamco laboris <strong>nisi ut aliquip</strong> ex ea commodo consequat. Duis aute irure <i>dolor</i> in reprehenderit in voluptate velit esse cillum <b>dolore</b> eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in <code>&lt;culpa&gt;</code> qui officia deserunt mollit anim id est laborum.</p>
-	</section>
-
-	<section class="slide">
-		<h2>Two columns if you like</h2>
-		<p class="double">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
-	</section>
-
-	<section class="slide">
-		<h2>All kind of lists</h2>
-		<ol>
-			<li>Simple lists are marked with bullets</li>
-			<li>Ordered lists begin with a number</li>
-			<li>You can even nest lists one inside another
-				<ul>
-					<li>Or mix their types</li>
-					<li>But do not go too far</li>
-					<li>Otherwise audience will be bored</li>
-				</ul>
-			</li>
-			<li>Look, seven rows exactly!</li>
+			<li>Знакомство</li>
+			<li>Разработка сайта</li>
+			<li>Про этот курс</li>
+			<li>Что происходит при открытии сайта</li>
+			<li>GIT</li>
 		</ol>
 	</section>
 
 	<section class="slide">
-		<h2>Serious citations</h2>
-		<figure>
-			<blockquote>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
-			</blockquote>
-			<figcaption>Marcus Tullius Cicero</figcaption>
-		</figure>
-	</section>
+		<h2>Знакомство</h2>
 
-	<section class="slide">
-		<h2>Code samples</h2>
-		<pre>
-			<code>&lt;!DOCTYPE html&gt;</code>
-			<code class="mark">&lt;html lang="en"&gt;</code>
-			<code><mark>&lt;head&gt;</mark> <span class="comment">&lt;!--Comment--&gt;</span></code>
-			<code>    &lt;title&gt;Shower&lt;/title&gt;</code>
-			<code>    &lt;meta charset="<mark class="important">UTF-8</mark>"&gt;</code>
-			<code>    &lt;link rel="stylesheet" href="screen.css"&gt;</code>
-			<code><mark>&lt;/head&gt;</mark></code>
-		</pre>
-	</section>
+		<p>Сергей Козлов, фронтэнд-разработчик</p>
 
-	<section class="slide">
-		<h2>Even tables</h2>
-		<table>
-		<tr>
-			<th scope="col">Locavore</th>
-			<th>Umami</th>
-			<th>Helvetica</th>
-			<th>Vegan</th>
-		</tr>
-		<tr>
-			<th scope="row">Fingerstache</th>
-			<td>Kale</td>
-			<td>Chips</td>
-			<td>Keytar</td>
-		</tr>
-		<tr>
-			<th scope="row">Sriracha</th>
-			<td>Gluten-free</td>
-			<td>Ennui</td>
-			<td>Keffiyeh</td>
-		</tr>
-		<tr>
-			<th scope="row">Thundercats</th>
-			<td>Jean</td>
-			<td>Shorts</td>
-			<td>Biodiesel</td>
-		</tr>
-		<tr>
-			<th scope="row">Terry</th>
-			<td>Richardson</td>
-			<td>Swag</td>
-			<td>Blog</td>
-		</tr>
-		</table>
-		<p>It’s good to have information organized.</p>
-	</section>
-
-	<section class="slide" id="picture">
-		<h2>Pictures</h2>
-		<figure>
-			<img class="cover" src="pictures/picture.jpg" alt="Orange typewriter on a wooden table close-up">
-			<figcaption class="white">
-				<a href="http://fiftyfootshadows.net/">© John Carey</a>
-			</figcaption>
-		</figure>
-		<style>
-			#picture h2 {
-				color:#FFF;
-				}
-		</style>
-	</section>
-
-	<section class="slide">
-		<h2 class="shout shrink">You can even shout this way</h2>
-	</section>
-
-	<section class="slide">
-		<h2>Inner navigation</h2>
 		<ol>
-			<li>Lets you reveal list items one by one</li>
-			<li class="next">To keep some key points</li>
-			<li class="next">In secret from audience</li>
-			<li class="next">But it will work only once</li>
-			<li class="next">Nobody wants to see the same joke twice</li>
+			<li>Интересуюсь вебом с 2007</li>
+			<li>2014—2015 — фуллстек-разработчик в веб-студии «Медиасеть»</li>
+			<li>с 2016 — фронтэнд-разработчик в компании SOKOLOV</li>
+			<li>также с 2016 — наставник в интенсивах по HTML и CSS на сайте htmlacademy.ru</li>
 		</ol>
 	</section>
 
-	<section class="slide grid">
-		<h2>All nicely aligned to grid</h2>
+	<section class="slide">
+		<h2>Как со мной связаться</h2>
+
+		<ol>
+			<li><a href="https://vk.com/dartess">vk.com/dartess</a></li>
+			<li><a href="https://telegram.me/dartess">telegram.me/dartess</a></li>
+			<li><a href="mailto://dartess@mail.ru">dartess@mail.ru</a></li>
+		</ol>
 	</section>
 
-	<section class="slide" id="see-more">
-		<h2 class="shout">
-			<img src="pictures/logo.svg" alt="Shower logo">
-			<a href="https://github.com/shower/shower">See more on GitHub</a>
-		</h2>
+	<section class="slide">
+		<h2>Теперь о вас</h2>
+
+		<ol>
+			<li>Как вас зовут?</li>
+			<li>Немного о себе <span style="color:gray">(по желанию)</span></li>
+			<li>Что вы хотите получить от курса <span style="color:gray">(по желанию)</span></li>
+		</ol>
+	</section>
+
+	<section class="slide" id="techno">
+		<h2>Разработка сайта</h2>
+
+		<div class="logos">
+			<figure class="logo next">
+				<img class="" src="pictures/prototype.png" alt="">
+				<figcaption>Анализ, прототип, UX</figcaption>
+			</figure>
+			<div class="logo next">
+				<figure class="">
+					<figcaption>UI</figcaption>
+				</figure>
+				<figure class="">
+					<img class="" src="pictures/logo--sketch.png" alt="">
+					<figcaption>Scetch</figcaption>
+				</figure>
+				<figure class="">
+					<img class="" src="pictures/logo--ps.svg" alt="">
+					<figcaption>Photoshop</figcaption>
+				</figure>
+			</div>
+			<div class="logo next">
+				<figure class="">
+					<figcaption>Вёрстка</figcaption>
+				</figure>
+				<figure class="">
+					<img class="" src="pictures/logo--html.png" alt="">
+					<figcaption>HTML</figcaption>
+				</figure>
+				<figure class="">
+					<img class="" src="pictures/logo--css.png" alt="">
+					<figcaption>CSS</figcaption>
+				</figure>
+			</div>
+			<figure class="logo next">
+				<img class="" src="pictures/logo--js.png" alt="">
+				<figcaption>JavaScript</figcaption>
+			</figure>
+			<figure class="logo next">
+				<img class="" src="pictures/logo--php.png" alt="">
+				<figcaption>PHP</figcaption>
+			</figure>
+			<figure class="logo next">
+				<img class="" src="pictures/logo--mysql.png" alt="">
+				<figcaption>БД</figcaption>
+			</figure>
+			<div class="next logo-border logo-border--html-css"></div>
+			<div class="next logo-border logo-border--design"></div>
+			<div class="next logo-border logo-border--frontend"></div>
+			<div class="next logo-border logo-border--design-super"></div>
+			<div class="next logo-border logo-border--backend"></div>
+			<div class="next logo-border logo-border--fullstack"></div>
+			<figure class="logo logo--ajax next">
+				<img class="" src="pictures/logo--ajax.png" alt="">
+				<figcaption>( front + back = <3 )</figcaption>
+			</figure>
+		</div>
 		<style>
-			#see-more h2 {
-				font-size:100px
-				}
-			#see-more img {
-				width:0.72em;
-				height:0.72em;
-				}
+			#techno .logos {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				position: relative;
+				top: 5px;
+			}
+
+			#techno .logos > * {
+				width: 10%;
+				margin: 2%;
+			}
+
+			#techno .logo {
+				text-align: center;
+				line-height: 1.2;
+				display: flex;
+				flex-direction: column;
+			}
+
+			#techno .logo--ajax {
+				position: absolute;
+				top: -175px;
+				left: 498px;
+				display: flex;
+				align-items: center;
+			}
+
+			#techno .logo--ajax > * {
+				white-space: nowrap;
+			}
+
+			#techno .logo > * {
+				margin: 1rem 0;
+			}
+
+			#techno .logo-border {
+				position: absolute;
+				width: auto;
+				margin: 0;
+				z-index: -10;
+				border-radius: 30px;
+				border: 5px dashed currentColor;
+				overflow: hidden;
+			}
+
+			#techno .logo-border::before {
+				content: '';
+				position: absolute;
+				left: 0;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				background-color: currentColor;
+				opacity: .2;
+			}
+
+			#techno .logo-border--html-css {
+				left: 290px;
+				top: 27px;
+				width: 102px;
+				height: 356px;
+				color: #A63100;
+			}
+
+			#techno .logo-border--design {
+				left: 0;
+				top: 49px;
+				width: 259px;
+				height: 313px;
+				color: #A66000;
+			}
+
+			#techno .logo-border--frontend {
+				left: 279px;
+				top: 0;
+				width: 259px;
+				height: 416px;
+				color: #0B5FA5;
+			}
+
+			#techno .logo-border--design-super {
+				left: 145px;
+				top: 13px;
+				width: 260px;
+				height: 388px;
+				color: #00AE68;
+			}
+
+			#techno .logo-border--backend {
+				left: 569px;
+				top: 130px;
+				width: 258px;
+				height: 141px;
+				color: #FF9D73;
+			}
+
+			#techno .logo-border--fullstack {
+				left: 266px;
+				top: -13px;
+				width: 574px;
+				height: 441px;
+				color: #FFC473;
+			}
+
+			#techno figcaption {
+				font-size: 1.2rem;
+			}
+
 		</style>
 	</section>
 
-	<footer class="badge">
-		<a href="https://github.com/shower/shower">Fork me on GitHub</a>
-	</footer>
+	<section class="slide">
+		<h2>Что охватывает базовый курс</h2>
+		<ul>
+			<li>HTML</li>
+			<li>CSS</li>
+			<li>JavaScript (на основе библиотеки jQuery)</li>
+			<li>PHP</li>
+		</ul>
+	</section>
+
+	<section class="slide">
+		<h2>Примерный план занятия</h2>
+		<ol>
+			<li class="next">Теория</li>
+			<li class="next">Вопросы</li>
+			<li class="next">Практика</li>
+			<li class="next">...</li>
+			<li class="next">Теория...</li>
+		</ol>
+	</section>
+
+	<section class="slide" id="how-work">
+		<h2>Что происходит при открытии сайта</h2>
+
+		<div class="pc pc--user">
+			<img class="" src="pictures/pc.jpg" alt="">
+			<div class="pc__label next">Chrome</div>
+		</div>
+
+		<div class="pc pc--server-1">
+			<img class="" src="pictures/pc.jpg" alt="">
+			<div class="pc__label next">Сервер 1</div>
+		</div>
+
+		<div class="pc pc--server-2">
+			<img class="" src="pictures/pc.jpg" alt="">
+			<div class="pc__label next">Сервер 2</div>
+		</div>
+
+		<div class="pc pc--dns">
+			<img class="" src="pictures/pc.jpg" alt="">
+			<div class="pc__label next">DNS-сервер</div>
+		</div>
+
+		<div class="next">
+			<div class="pc pc--user">
+				<div class="pc__ip">42.46.6.210</div>
+			</div>
+
+			<div class="pc pc--server-1">
+				<div class="pc__ip">95.213.11.180</div>
+			</div>
+
+			<div class="pc pc--server-2">
+				<div class="pc__ip">242.210.133.201</div>
+			</div>
+
+			<div class="pc pc--dns">
+				<div class="pc__ip">8.8.8.8</div>
+			</div>
+		</div>
+
+		<div class="arrow arrow--get-dns next"></div>
+		<div class="arrow-text arrow-text--get-dns next">vk.com?</div>
+		<div class="arrow arrow--send-dns next"></div>
+		<div class="arrow-text arrow-text--send-dns next">95.213.11.180</div>
+		<div class="arrow arrow--get-vk next"></div>
+		<div class="arrow-text arrow-text--get-vk next">domain: vk.com, path: /feed/</div>
+		<div class="arrow arrow--response-vk next"></div>
+		<div class="arrow-text arrow-text--response-vk next">&lt;html&gt;</div>
+
+		<div class="res res--1 next">
+			<div class="arrow arrow--get-vk-1"></div>
+			<div class="arrow-text arrow-text--get-vk-1">/images/avatar.jpg, /script.js, /style.css, ...</div>
+			<div class="arrow arrow--response-vk-1"></div>
+			<div class="arrow-text arrow-text--response-vk-1">&lt;file&gt;, &lt;file&gt;, &lt;file&gt;, ...</div>
+		</div>
+		<style>
+
+			.res {
+				position: absolute;
+				left: 0;
+				top: 0;
+				bottom: 0;
+				right: 0;
+			}
+
+			.arrow--get-dns {
+				width: 70px !important;
+				left: 79px;
+				top: 404px;
+				transform: rotate(0.25turn);
+			}
+
+			.arrow--send-dns {
+				width: 70px !important;
+				left: 135px;
+				top: 404px;
+				transform: rotate(0.75turn);
+			}
+
+			.arrow--get-vk {
+				width: 200px !important;
+				left: 400px;
+				top: 204px;
+			}
+
+			.arrow--response-vk {
+				width: 200px !important;
+				left: 400px;
+				top: 240px;
+				transform: rotate(0.5turn);
+			}
+
+			.arrow--get-vk-1 {
+				width: 200px !important;
+				left: 400px;
+				top: 316px;
+			}
+
+			.arrow--response-vk-1 {
+				width: 200px !important;
+				left: 400px;
+				top: 336px;
+				transform: rotate(0.5turn);
+			}
+
+			.arrow-text {
+				font-size: 15px;
+				position: absolute;
+				color: blue;
+			}
+
+			.arrow-text--get-dns {
+				left: 51px;
+				top: 395px;
+			}
+
+			.arrow-text--send-dns {
+				left: 183px;
+				top: 395px;
+			}
+
+			.arrow-text--get-vk {
+				left: 411px;
+				top: 174px;
+			}
+
+			.arrow-text--response-vk {
+				left: 470px;
+				top: 245px;
+			}
+
+			.arrow-text--get-vk-1 {
+				left: 378px;
+				top: 286px;
+			}
+
+			.arrow-text--response-vk-1 {
+				left: 437px;
+				top: 342px;
+			}
+
+			.pc {
+				width: 204px;
+				height: 142px;
+				position: absolute;
+			}
+			.pc__label {
+				position: absolute;
+				display: flex;
+				left: 0;
+				top: 0;
+				width: 177px;
+				height: 92px;
+				font-size: 20px;
+				justify-content: center;
+				align-items: center;
+			}
+			.pc--user {
+				left: 50px;
+				top: 200px;
+			}
+			.pc--server-1 {
+				right: 50px;
+				top: 200px;
+			}
+			.pc--server-2 {
+				right: 50px;
+				bottom: 0;
+			}
+			.pc--dns {
+				left: 50px;
+				bottom: 0;
+			}
+
+			.pc__ip {
+				position: absolute;
+				left: 0;
+				right: 0;
+				text-align: center;
+				top: -30px;
+				color: green;
+			}
+		</style>
+	</section>
+
+	<section class="slide">
+		<h2>Git</h2>
+		<p>Распределённая система управления версиями.</p>
+	</section>
+
+	<section class="slide">
+		<h2>Типичная проблема с версиями</h2>
+		<p>Организация файлов у дизайнера:</p>
+		<ul>
+			<li>source </li>
+			<li>|- nerds_index_final.psd </li>
+			<li>|- nerds_index_final_2.ps</li>
+			<li>|- nerds_index_final_19.psd </li>
+			<li>|- ... </li>
+			<li>|- nerds_catalog_final.psd</li>
+			<li class="next">|- nerds_catalog_final_2.psd</li>
+		</ul>
+	</section>
+
+	<section class="slide" id="vcs">
+		<h2>Система контроля версий</h2>
+
+		<div class="half">
+			<p>Физический диск</p>
+			<ul>
+				<li><b>document.txt</b> (актуальная версия, 04.04.2016 18:30)</li>
+			</ul>
+		</div>
+		<div class="half next" style="border: 3px dashed gray">
+			<p>«Рабочая область»</p>
+			<ul>
+				<li class="next"><b>document.txt</b> (04.04.2016 18:30)</li>
+				<li>document.txt (03.04.2016 20:18)</li>
+				<li>document.txt (03.04.2016 15:10)</li>
+				<li>document.txt (02.04.2016 14:56)</li>
+				<li>document.txt (01.04.2016 23:58)</li>
+				<li>document.txt (22.01.2016 08:37)</li>
+			</ul>
+		</div>
+		<p class="next" style="color:red; float: left; position: relative; top: -141px; left: 20px; font-size: 3rem;">
+			<b>commit</b>
+		</p>
+
+		<style>
+			#vcs .half {
+				float: left;
+				width: 50%;
+				padding: 0 23px;
+			}
+			#vcs ul li::before {
+				opacity: 0 !important;
+			}
+		</style>
+	</section>
+
+	<section class="slide" id="csv">
+		<h2>Репозиторий</h2>
+		<p>Набор файлов (папка), изменение которых отслеживает система контроля версий</p>
+		<h2>Коммит</h2>
+		<p>Состояние всех файлов репозитория, зафиксированное в определённый момент времени.</p>
+		<h2>Хэш коммита</h2>
+		<p>Идентификатор коммита (<i>442fd26</i>)</p>
+		<style>
+			#csv {
+				padding-top: 50px;
+			}
+		</style>
+	</section>
+
+	<section class="slide" id="checkout">
+		<h2>Чекаут</h2>
+		<p>Переключение между версиями файлов</p>
+		<div class="half">
+			<p>Физический диск</p>
+			<ul>
+				<li>document.txt (актуальная версия, 04.04.2016 18:30)</li>
+			</ul>
+		</div>
+		<div class="half" style="border: 3px dashed gray">
+			<p>«Рабочая область»</p>
+			<ul>
+				<li>document.txt (04.04.2016 18:30, <i>5462ab4</i>)</li>
+				<li>document.txt (01.04.2016 23:58, <i>a95a763</i>)</li>
+				<li>document.txt (22.01.2016 08:37, <i>b7732b1</i>)</li>
+			</ul>
+		</div>
+		<p class="next" style="color:red; float: left; position: relative; top: -141px; left: 20px; font-size: 2.5rem;">
+			<b>git checkout b7732b1</b>
+		</p>
+		<style>
+			#checkout {
+				padding-top: 50px;
+			}
+			#checkout .half {
+				float: left;
+				width: 50%;
+				padding: 0 23px;
+			}
+			#checkout ul li::before {
+				opacity: 0 !important;
+			}
+		</style>
+	</section>
+
+	<section class="slide" id="checkout-2">
+		<h2>Чекаут</h2>
+		<p>Переключение между версиями файлов</p>
+		<div class="half">
+			<p>Физический диск</p>
+			<ul>
+				<li>document.txt (старая версия, 22.01.2016 08:37)</li>
+			</ul>
+		</div>
+		<div class="half" style="border: 3px dashed gray">
+			<p>«Рабочая область»</p>
+			<ul>
+				<li>document.txt (04.04.2016 18:30, <i>5462ab4</i>)</li>
+				<li>document.txt (01.04.2016 23:58, <i>a95a763</i>)</li>
+				<li>document.txt (22.01.2016 08:37, <i>b7732b1</i>)</li>
+			</ul>
+		</div>
+		<style>
+			#checkout-2 {
+				padding-top: 50px;
+			}
+			#checkout-2 .half {
+				float: left;
+				width: 50%;
+				padding: 0 23px;
+			}
+			#checkout-2 ul li::before {
+				opacity: 0 !important;
+			}
+		</style>
+	</section>
+
+	<section class="slide">
+		<h2>Что значит «распеделённая система»</h2>
+		<ol>
+			<li>У каждого пользователя есть свой репозиторий. </li>
+			<li class="next">Номера версий сложные, рассчитываются по текущему содержимому репозитория.</li>
+			<li class="next">Работать быстро и удобно.</li>
+			<li class="next">Но нужна синхронизация репозиториев, так как проект — один и его состояние должно быть у всех одинаковым.</li>
+		</ol>
+	</section>
+
+	<section class="slide" id="push">
+		<h2>Совместная работа</h2>
+		<div class="half" style="border: 3px dashed gray">
+			<p>«Рабочая область» Васи</p>
+			<ul>
+				<li>document.txt (04.04.2016 18:30, <i>5462ab4</i>)</li>
+				<li>document.txt (01.04.2016 23:58, <i>a95a763</i>)</li>
+				<li>document.txt (22.01.2016 08:37, <i>b7732b1</i>)</li>
+			</ul>
+		</div>
+		<p class="next" style="color:red; float: left; position: absolute; top: 535px; left: 223px; font-size: 2.5rem;">
+			<b>git push</b>
+		</p>
+		<div class="half half--server next" style="border: 3px dashed gray">
+			<p>«Рабочая область» на сервере</p>
+			<ul>
+				<li>document.txt (04.04.2016 18:30, <i>5462ab4</i>)</li>
+				<li>document.txt (01.04.2016 23:58, <i>a95a763</i>)</li>
+				<li>document.txt (22.01.2016 08:37, <i>b7732b1</i>)</li>
+			</ul>
+		</div>
+		<style>
+			#push {
+				padding-top: 50px;
+			}
+			#push .half {
+				float: left;
+				width: 48%;
+				padding: 0 23px;
+				margin: 0 1%;
+			}
+			#push ul li::before {
+				opacity: 0 !important;
+			}
+			#push .half--server {
+				position: relative;
+			}
+			#push .half--server::before {
+				content: '=>';
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				color: blue;
+				left: -46px;
+				font-size: 66px;
+				font-weight: bold;
+			}
+		</style>
+	</section>
+
+	<section class="slide" id="pull">
+		<h2>Совместная работа</h2>
+		<div class="pack" style="border: 3px dashed gray">
+			<p>Вася</p>
+			<ul>
+				<li>document.txt <i>5462ab4</i></li>
+				<li>document.txt <i>a95a763</i></li>
+				<li>document.txt <i>b7732b1</i></li>
+			</ul>
+		</div>
+		<div class="pack" style="border: 3px dashed gray">
+			<p>Сервер</p>
+			<ul>
+				<li>document.txt <i>5462ab4</i></li>
+				<li>document.txt <i>a95a763</i></li>
+				<li>document.txt <i>b7732b1</i></li>
+			</ul>
+		</div>
+		<p class="next" style="color:red; float: left; position: absolute; top: 30px; right: 180px; font-size: 2.5rem;">
+			<b>git pull</b>
+		</p>
+		<div class="pack" style="border: 3px dashed gray">
+			<p>Иван</p>
+			<ul class="next">
+				<li>document.txt <i>5462ab4</i></li>
+				<li>document.txt <i>a95a763</i></li>
+				<li>document.txt <i>b7732b1</i></li>
+			</ul>
+		</div>
+		<style>
+			#pull {
+				padding-top: 50px;
+			}
+			#pull .pack {
+				float: left;
+				width: 31%;
+				padding: 0 23px;
+				margin: 0 1%;
+			}
+			#pull ul li::before {
+				opacity: 0 !important;
+			}
+			#pull .pack--server {
+				position: relative;
+			}
+			#pull .pack--server::before {
+				content: '=>';
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				color: blue;
+				left: -46px;
+				font-size: 66px;
+				font-weight: bold;
+			}
+		</style>
+	</section>
+
+	<section class="slide" id="pull-2">
+		<h2>Совместная работа</h2>
+		<div class="pack pack--s" style="border: 3px dashed gray">
+			<p>Сервер</p>
+			<ul>
+				<li class="next" style="color: green">document.txt <i>4193af</i></li>
+				<li>document.txt <i>5462ab4</i></li>
+				<li>document.txt <i>a95a763</i></li>
+				<li>document.txt <i>b7732b1</i></li>
+			</ul>
+		</div>
+		<div class="pack pack--v" style="border: 3px dashed gray">
+			<p>Вася</p>
+			<ul>
+				<li class="next" style="color: green">document.txt <i>4193af</i></li>
+				<li>document.txt <i>5462ab4</i></li>
+				<li>document.txt <i>a95a763</i></li>
+				<li>document.txt <i>b7732b1</i></li>
+			</ul>
+		</div>
+		<div class="pack" style="border: 3px dashed gray">
+			<p>Иван</p>
+			<ul>
+				<li style="color: green">document.txt <i>4193af</i></li>
+				<li>document.txt <i>5462ab4</i></li>
+				<li>document.txt <i>a95a763</i></li>
+				<li>document.txt <i>b7732b1</i></li>
+			</ul>
+		</div>
+		<style>
+			#pull-2 {
+				padding-top: 50px;
+			}
+			#pull-2 .pack {
+				float: left;
+				width: 31%;
+				padding: 0 23px;
+				margin: 0 1%;
+				line-height: 1.6;
+			}
+			#pull-2 .pack--s {
+				position: relative;
+				left: 33%;
+			}
+			#pull-2 .pack--v {
+				position: relative;
+				left: -33%;
+			}
+			#pull-2 ul li::before {
+				opacity: 0 !important;
+			}
+		</style>
+	</section>
+
+	<section class="slide" id="merge">
+		<h2>А если одновременно?</h2>
+		<div class="pack" style="border: 3px dashed gray">
+			<p>Вася</p>
+			<ul>
+				<li class="next" style="color: orange">document.txt <i>db8a20</i></li>
+				<li class="" style="color: green">document.txt <i>4193af</i></li>
+				<li>document.txt <i>5462ab4</i></li>
+				<li>...</li>
+			</ul>
+		</div>
+		<div class="pack" style="border: 3px dashed gray">
+			<p>Сервер</p>
+			<ul>
+				<li></li>
+				<li></li>
+				<li class="" style="color: green">document.txt <i>4193af</i></li>
+				<li>document.txt <i>5462ab4</i></li>
+				<li>...</li>
+			</ul>
+		</div>
+		<div class="pack" style="border: 3px dashed gray">
+			<p>Иван</p>
+			<ul>
+				<li class="next" style="color: green">document.txt <i>991e8a</i></li>
+				<li style="color: green">document.txt <i>4193af</i></li>
+				<li>document.txt <i>5462ab4</i></li>
+				<li>...</li>
+			</ul>
+		</div>
+		<style>
+			#merge {
+				padding-top: 50px;
+			}
+			#merge .pack {
+				float: left;
+				width: 31%;
+				padding: 0 23px;
+				margin: 0 1%;
+				line-height: 1.6;
+			}
+			#merge ul li::before {
+				opacity: 0 !important;
+			}
+		</style>
+	</section>
+
+	<section class="slide">
+		<h2>А если одновременно?</h2>
+		<p>Кто-то первый отправит свои изменения на сервер. Предположим, это был Иван.</p>
+		<p class="next">Тогда Вася не сможет отправить свои изменения, пока не получит обновления от сервера.</p>
+		<p class="next">Так как изменения были в одном и том же файле, git постарается «склеить» (merge) две версии файла — от Ивана и от Васи.</p>
+	</section>
+
+	<section class="slide">
+		<h2>А если одновременно?</h2>
+		<p>Далее возможны два варианта:</p>
+		<ol>
+			<li class="next">Изменения были в разных местах документа, и их удалось <span style="color: green">«слить»</span>. Система создаёт коммит с информацией о «слиянии» и позволяет отправить оба коммиат на сервер.</li>
+			<li class="next">Изменения (по мнению git) были в одной и той же части документа. В этом случае git получает т.н. <span style="color: red">«конфликт»</span>. Вася должен вручную решить, какой участок файла следует оставить, после чего изменения можно будет отправить на сервер.</li>
+		</ol>
+	</section>
+
+	<section class="slide">
+		<h2>Домашнее занятие</h2>
+		<ol>
+			<li>Принести тетрадь</li>
+			<li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdCmdw0GoDGqYSW_ZkeZeKkwn6DkQ2v-GIktsEPCy7SeuyRrw/viewform">Пройти опрос</a></li>
+			<li><a href="https://githowto.com/ru">Попробовать git</a></li>
+		</ol>
+	</section>
 
 	<div class="progress"></div>
 
@@ -202,4 +821,37 @@
 	<!-- Copyright © 2017 Yours Truly, Famous Inc. -->
 
 </body>
+
+<style>
+	.caption h2 {
+		padding-bottom: .15em;
+		font: 700 0.8em/1 PT Sans Narrow, sans-serif;
+	}
+
+	img {
+		max-width: 100%;
+	}
+
+	.arrow {
+  position: absolute;
+  transform-origin: center;
+  height: 5px;
+  background-color: black;
+}
+.arrow::after {
+	left: 100%;
+	top: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(136, 183, 213, 0);
+	border-left-color: black;
+	border-width: 10px;
+	margin-top: -10px;
+}
+</style>
+
 </html>
