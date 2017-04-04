@@ -27,7 +27,7 @@
 
 	<section class="slide">
 		<h2>Знакомство</h2>
-		
+
 		<p>Сергей Козлов, фронтэнд-разработчик</p>
 
 		<ol>
@@ -53,8 +53,8 @@
 
 		<ol>
 			<li>Как вас зовут?</li>
-			<li>Немного о себе</li>
-			<li>Что вы хотите получить от курса</li>
+			<li>Немного о себе <span style="color:gray">(по желанию)</span></li>
+			<li>Что вы хотите получить от курса <span style="color:gray">(по желанию)</span></li>
 		</ol>
 	</section>
 
@@ -69,7 +69,7 @@
 			<div class="logo next">
 				<figure class="">
 					<figcaption>UI</figcaption>
-				</figure>			
+				</figure>
 				<figure class="">
 					<img class="" src="pictures/logo--sketch.png" alt="">
 					<figcaption>Scetch</figcaption>
@@ -82,7 +82,7 @@
 			<div class="logo next">
 				<figure class="">
 					<figcaption>Вёрстка</figcaption>
-				</figure>			
+				</figure>
 				<figure class="">
 					<img class="" src="pictures/logo--html.png" alt="">
 					<figcaption>HTML</figcaption>
@@ -249,8 +249,190 @@
 		</ol>
 	</section>
 
-	<section class="slide">
+	<section class="slide" id="how-work">
 		<h2>Что происходит при открытии сайта</h2>
+
+		<div class="pc pc--user">
+			<img class="" src="pictures/pc.jpg" alt="">
+			<div class="pc__label next">Chrome</div>
+		</div>
+
+		<div class="pc pc--server-1">
+			<img class="" src="pictures/pc.jpg" alt="">
+			<div class="pc__label next">Сервер 1</div>
+		</div>
+
+		<div class="pc pc--server-2">
+			<img class="" src="pictures/pc.jpg" alt="">
+			<div class="pc__label next">Сервер 2</div>
+		</div>
+
+		<div class="pc pc--dns">
+			<img class="" src="pictures/pc.jpg" alt="">
+			<div class="pc__label next">DNS-сервер</div>
+		</div>
+
+		<div class="next">
+			<div class="pc pc--user">
+				<div class="pc__ip">42.46.6.210</div>
+			</div>
+
+			<div class="pc pc--server-1">
+				<div class="pc__ip">95.213.11.180</div>
+			</div>
+
+			<div class="pc pc--server-2">
+				<div class="pc__ip">242.210.133.201</div>
+			</div>
+
+			<div class="pc pc--dns">
+				<div class="pc__ip">8.8.8.8</div>
+			</div>
+		</div>
+
+		<div class="arrow arrow--get-dns next"></div>
+		<div class="arrow-text arrow-text--get-dns next">vk.com?</div>
+		<div class="arrow arrow--send-dns next"></div>
+		<div class="arrow-text arrow-text--send-dns next">95.213.11.180</div>
+		<div class="arrow arrow--get-vk next"></div>
+		<div class="arrow-text arrow-text--get-vk next">domain: vk.com, path: /feed/</div>
+		<div class="arrow arrow--response-vk next"></div>
+		<div class="arrow-text arrow-text--response-vk next">&lt;html&gt;</div>
+
+		<div class="res res--1 next">
+			<div class="arrow arrow--get-vk-1"></div>
+			<div class="arrow-text arrow-text--get-vk-1">/images/avatar.jpg, /script.js, /style.css, ...</div>
+			<div class="arrow arrow--response-vk-1"></div>
+			<div class="arrow-text arrow-text--response-vk-1">&lt;file&gt;, &lt;file&gt;, &lt;file&gt;, ...</div>
+		</div>
+		<style>
+
+			.res {
+				position: absolute;
+				left: 0;
+				top: 0;
+				bottom: 0;
+				right: 0;
+			}
+
+			.arrow--get-dns {
+				width: 70px !important;
+				left: 79px;
+				top: 404px;
+				transform: rotate(0.25turn);
+			}
+
+			.arrow--send-dns {
+				width: 70px !important;
+				left: 135px;
+				top: 404px;
+				transform: rotate(0.75turn);
+			}
+
+			.arrow--get-vk {
+				width: 200px !important;
+				left: 400px;
+				top: 204px;
+			}
+
+			.arrow--response-vk {
+				width: 200px !important;
+				left: 400px;
+				top: 240px;
+				transform: rotate(0.5turn);
+			}
+
+			.arrow--get-vk-1 {
+				width: 200px !important;
+				left: 400px;
+				top: 316px;
+			}
+
+			.arrow--response-vk-1 {
+				width: 200px !important;
+				left: 400px;
+				top: 336px;
+				transform: rotate(0.5turn);
+			}
+
+			.arrow-text {
+				font-size: 15px;
+				position: absolute;
+				color: blue;
+			}
+
+			.arrow-text--get-dns {
+				left: 51px;
+				top: 395px;
+			}
+
+			.arrow-text--send-dns {
+				left: 183px;
+				top: 395px;
+			}
+
+			.arrow-text--get-vk {
+				left: 411px;
+				top: 174px;
+			}
+
+			.arrow-text--response-vk {
+				left: 470px;
+				top: 245px;
+			}
+
+			.arrow-text--get-vk-1 {
+				left: 378px;
+				top: 286px;
+			}
+
+			.arrow-text--response-vk-1 {
+				left: 437px;
+				top: 342px;
+			}
+
+			.pc {
+				width: 204px;
+				height: 142px;
+				position: absolute;
+			}
+			.pc__label {
+				position: absolute;
+				display: flex;
+				left: 0;
+				top: 0;
+				width: 177px;
+				height: 92px;
+				font-size: 20px;
+				justify-content: center;
+				align-items: center;
+			}
+			.pc--user {
+				left: 50px;
+				top: 200px;
+			}
+			.pc--server-1 {
+				right: 50px;
+				top: 200px;
+			}
+			.pc--server-2 {
+				right: 50px;
+				bottom: 0;
+			}
+			.pc--dns {
+				left: 50px;
+				bottom: 0;
+			}
+
+			.pc__ip {
+				position: absolute;
+				left: 0;
+				right: 0;
+				text-align: center;
+				top: -30px;
+				color: green;
+			}
+		</style>
 	</section>
 
 	<section class="slide">
@@ -314,7 +496,7 @@
 		<h2>Коммит</h2>
 		<p>Состояние всех файлов репозитория, зафиксированное в определённый момент времени.</p>
 		<h2>Хэш коммита</h2>
-		<p>Идентификатор коммита (<i>442fd26)</p>
+		<p>Идентификатор коммита (<i>442fd26</i>)</p>
 		<style>
 			#csv {
 				padding-top: 50px;
@@ -628,7 +810,8 @@
 		<h2>Домашнее занятие</h2>
 		<ol>
 			<li>Принести тетрадь</li>
-			<li>Пройти опрос</li>
+			<li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdCmdw0GoDGqYSW_ZkeZeKkwn6DkQ2v-GIktsEPCy7SeuyRrw/viewform">Пройти опрос</a></li>
+			<li><a href="https://githowto.com/ru">Попробовать git</a></li>
 		</ol>
 	</section>
 
@@ -648,6 +831,27 @@
 	img {
 		max-width: 100%;
 	}
+
+	.arrow {
+  position: absolute;
+  transform-origin: center;
+  height: 5px;
+  background-color: black;
+}
+.arrow::after {
+	left: 100%;
+	top: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(136, 183, 213, 0);
+	border-left-color: black;
+	border-width: 10px;
+	margin-top: -10px;
+}
 </style>
 
 </html>
